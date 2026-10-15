@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${urbanist.variable} scroll-smooth antialiased dark`}>
-      <body className="min-h-screen bg-[#060607] text-[#FAFAFA] font-sans selection:bg-[#FF5100] selection:text-[#060607]">
+    <html lang="en" suppressHydrationWarning className={`${urbanist.variable} scroll-smooth antialiased dark`}>
+      <body suppressHydrationWarning className="min-h-screen bg-[#060607] text-[#FAFAFA] font-sans selection:bg-[#FF5100] selection:text-[#060607]">
         {children}
       </body>
     </html>

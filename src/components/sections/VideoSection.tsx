@@ -44,7 +44,7 @@ export function VideoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="group relative overflow-hidden rounded-[2.2rem] border border-[#2D2622] bg-[#0E0C0A] shadow-2xl"
+            className="group relative overflow-hidden -mx-6 sm:mx-0 rounded-none sm:rounded-[2.2rem] border-y sm:border border-[#2D2622] bg-[#0E0C0A] shadow-2xl"
           >
             <div className="relative aspect-[16/9] max-h-[520px] w-full overflow-hidden">
               <Image
