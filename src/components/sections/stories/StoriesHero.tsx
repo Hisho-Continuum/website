@@ -17,10 +17,10 @@ export function StoriesHero() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="select-none font-sans"
           >
-            <span className="text-outline-thin block text-6xl sm:text-7xl lg:text-[100px] font-extralight tracking-tight leading-[0.9]">
+            <span className="text-outline-thin block text-5xl sm:text-7xl lg:text-[100px] font-extralight tracking-tight leading-[0.9]">
               Real
             </span>
-            <span className="block text-6xl sm:text-7xl lg:text-[100px] font-black tracking-tight text-white leading-[0.9] mt-2">
+            <span className="block text-[clamp(2rem,8.5vw,3.75rem)] sm:text-7xl lg:text-[100px] font-black tracking-tight text-white leading-[0.9] mt-2">
               breakthroughs<span className="text-[#FF5100]">.</span>
             </span>
           </motion.h1>
