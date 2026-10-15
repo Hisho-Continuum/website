@@ -1,0 +1,32 @@
+"use client";
+
+import * as React from "react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { HowItWorksHero } from "@/components/sections/how-it-works/HowItWorksHero";
+import { HowItWorksPhases } from "@/components/sections/how-it-works/HowItWorksPhases";
+import { HowItWorksSprints } from "@/components/sections/how-it-works/HowItWorksSprints";
+import { HowItWorksFit } from "@/components/sections/how-it-works/HowItWorksFit";
+import { GrowthPlanModal } from "@/components/ui/GrowthPlanModal";
+
+export default function HowItWorksPage() {
+  const [isPlanModalOpen, setIsPlanModalOpen] = React.useState(false);
+
+  return (
+    <div className="relative min-h-screen bg-[#060607] text-[#FAFAFA] antialiased selection:bg-[#FF5100] selection:text-[#060607]">
+      <Navbar onOpenPlan={() => setIsPlanModalOpen(true)} />
+      <main className="flex flex-col">
+        <HowItWorksHero onOpenPlan={() => setIsPlanModalOpen(true)} />
+        <HowItWorksPhases onOpenPlan={() => setIsPlanModalOpen(true)} />
+        <HowItWorksSprints />
+        <HowItWorksFit onOpenPlan={() => setIsPlanModalOpen(true)} />
+      </main>
+      <Footer />
+      <GrowthPlanModal
+        isOpen={isPlanModalOpen}
+        onClose={() => setIsPlanModalOpen(false)}
+      />
+    </div>
+  );
+}
+
